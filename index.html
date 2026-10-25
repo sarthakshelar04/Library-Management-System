@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Task Manager</title>
+
+    <!-- Connect CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Website Header -->
+        <header>
+            <h1>Student Task Manager</h1>
+            <p>Manage your academic tasks easily</p>
+        </header>
+
+        <!-- Task Statistics -->
+        <section class="stats">
+
+            <div class="stat-card">
+                <h3>Total Tasks</h3>
+                <p id="totalTasks">0</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>Completed</h3>
+                <p id="completedTasks">0</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>Pending</h3>
+                <p id="pendingTasks">0</p>
+            </div>
+
+        </section>
+
+        <!-- Add Task Section -->
+        <section class="task-form">
+
+            <h2>Add New Task</h2>
+
+            <form id="taskForm">
+
+                <input
+                    type="text"
+                    id="taskInput"
+                    placeholder="Enter your task"
+                    required
+                >
+
+                <input
+                    type="text"
+                    id="studentInput"
+                    placeholder="Enter student name"
+                    required
+                >
+
+                <button type="submit">Add Task</button>
+
+            </form>
+
+        </section>
+
+        <!-- Task List -->
+        <section class="task-section">
+
+            <h2>My Tasks</h2>
+
+            <div id="taskList">
+
+                <!-- Tasks will appear here -->
+
+            </div>
+
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>Student Task Manager | Cloud Computing Mini Project</p>
+        </footer>
+
+    </div>
+
+    <!-- Connect JavaScript file -->
+    <script src="script.js"></script>
+
+</body>
+</html>
